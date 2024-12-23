@@ -68,6 +68,7 @@ footer {
     transform: scale(1.2);
     transition: transform 0.2s ease-in-out;
 }
+
 .heart-container {
     display: flex;
     flex-direction: column;
