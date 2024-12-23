@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section>
+    <h2>Click the Heart Below</h2>
+    <a href="#" id="heart" onclick="revealMessage()">
+        ❤️
+    </a>
+    <p id="hiddenMessage" style="display: none;">Sarah, you’re my everything. 💖</p>
+</section>
     <header>
         <h1>To My Dearest Sarah</h1>
     </header>
@@ -20,13 +27,10 @@
     <footer>
         <p>With all my love, Preyo</p>
     </footer>
-</body>
-<section>
-    <h2>Click the Heart Below</h2>
-    <a href="#" id="heart" onclick="revealMessage()">
-        ❤️
-    </a>
-    <p id="hiddenMessage" style="display: none;">Sarah, you’re my everything. 💖</p>
-</section>
-
+</body> <script>
+    function revealMessage() {
+        const message = document.getElementById("hiddenMessage");
+        message.style.display = "block";
+    }
+</script>
 </html>
