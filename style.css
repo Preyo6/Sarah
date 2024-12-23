@@ -88,3 +88,14 @@ button:hover {
     background: #ff9a8b;
     transform: scale(1.1);
 }
+#heart {
+    font-size: 50px;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+#heart:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
