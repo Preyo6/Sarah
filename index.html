@@ -12,6 +12,10 @@
         <a href="#" id="heart" onclick="revealMessage()">❤️</a>
         <p id="hiddenMessage" style="display: none;">Sarah, you’re my everything. 💖</p>
     </div>
+	<section>
+    <button id="playSong">Play Our Song</button>
+    <audio id="song" src="your-song-file.mp3"></audio>
+</section>
 </section>
     <header>
         <h1>To My Dearest Sarah</h1>
@@ -32,5 +36,15 @@
         const message = document.getElementById("hiddenMessage");
         message.style.display = "block";
     }
+</script>
+<script>
+    document.getElementById("playSong").addEventListener("click", function () {
+        const song = document.getElementById("song");
+        if (song.paused) {
+            song.play();
+        } else {
+            song.pause();
+        }
+    });
 </script>
 
