@@ -7,44 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section>
-    <div class="heart-container">
-        <a href="#" id="heart" onclick="revealMessage()">❤️</a>
-        <p id="hiddenMessage" style="display: none;">Sarah, you’re my everything. 💖</p>
-    </div>
-	<section>
-    <button id="playSong">Play Our Song</button>
-    <audio id="song" src="her-favorite-song.mp3"></audio>
-</section>
-</section>
+    <!-- Header Section -->
     <header>
         <h1>To My Dearest Sarah</h1>
     </header>
+
+    <!-- Dedication Section -->
     <section>
-        <p>This website is dedicated to you because you light up my world. You mean everything to me bubs</p>
+        <p>This website is dedicated to you because you light up my world. You mean everything to me, bubs.</p>
     </section>
+
+    <!-- Image and Love Message Section -->
     <section>
-        <h2>I love you forever</h2>
-        <img src="her_photo.jpeg.jpeg"alt="A picture of us" width="300"/>
+        <h2>I Love You Forever</h2>
+        <img src="her_photo.jpeg.jpeg" alt="A picture of us" />
     </section>
+
+    <!-- Heart with Hidden Message Section -->
+    <section>
+        <div class="heart-container">
+            <a href="#" id="heart" onclick="revealMessage()">❤️</a>
+            <p id="hiddenMessage" style="display: none;">Sarah, you’re my everything. 💖</p>
+        </div>
+    </section>
+
+    <!-- Music Button Section -->
+    <section>
+        <button id="playSong">Play Our Song</button>
+        <audio id="song" src="her-favorite-song.mp3"></audio>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>With all my love, Preyo</p>
     </footer>
-</body>
-</html><script>
-    function revealMessage() {
-        const message = document.getElementById("hiddenMessage");
-        message.style.display = "block";
-    }
-</script>
-<script>
-    document.getElementById("playSong").addEventListener("click", function () {
-        const song = document.getElementById("song");
-        if (song.paused) {
-            song.play();
-        } else {
-            song.pause();
-        }
-    });
-</script>
 
+    <!-- Scripts -->
+    <script>
+        function revealMessage() {
+            const message = document.getElementById("hiddenMessage");
+            message.style.display = "block";
+        }
+
+        document.getElementById("playSong").addEventListener("click", function () {
+            const song = document.getElementById("song");
+            if (song.paused) {
+                song.play();
+            } else {
+                song.pause();
+            }
+        });
+    </script>
+</body>
+</html>

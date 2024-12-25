@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
-    background-color: #f5f5fa; /* Soft light background */
+    background-color: #f5f5fa;
     color: #333;
     line-height: 1.8;
 }
@@ -16,7 +16,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #ff9a8b, #ffc3a0); /* Soft pastel gradient */
+    background: linear-gradient(135deg, #ff9a8b, #ffc3a0);
     padding: 20px 0;
 }
 
@@ -25,7 +25,7 @@ h2 {
     color: #ff6f91;
     text-align: center;
     font-size: 2rem;
-    margin: 20px 0 10px;
+    margin: 20px 0;
 }
 
 /* Paragraphs */
@@ -82,6 +82,7 @@ footer {
     color: #555;
     text-align: center;
 }
+
 /* Button */
 button {
     display: block;
@@ -110,6 +111,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 #playSong {
     background-color: #ff69b4;
     color: white;
