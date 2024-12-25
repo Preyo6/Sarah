@@ -26,7 +26,7 @@
     <!-- Heart with Hidden Message Section -->
     <section>
         <div class="heart-container">
-            <a href="#" id="heart" onclick="revealMessage()">❤️</a>
+            <a href="#" id="heart" onclick="revealMessage(event)">❤️</a>
             <p id="hiddenMessage" style="display: none;">Gosh how did I get so lucky</p>
         </div>
     </section>
@@ -44,10 +44,11 @@
 
     <!-- Scripts -->
     <script>
-        function revealMessage() {
-            const message = document.getElementById("hiddenMessage");
-            message.style.display = "block";
-        }
+        function revealMessage(event) {
+    event.preventDefault(); // Prevent the default jump-to-top behavior
+    const message = document.getElementById("hiddenMessage");
+    message.style.display = "block";
+}
 
         document.getElementById("playSong").addEventListener("click", function () {
             const song = document.getElementById("song");
